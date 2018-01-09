@@ -23,7 +23,7 @@ Since the application is based on the [Box library](https://github.com/herrera-i
 
 # Using
 
-Run the `box-project` image:
+### Run the `box-project` image:
 
 ```sh
 docker run --rm --interactive --tty \
@@ -31,7 +31,7 @@ docker run --rm --interactive --tty \
     nasajon/box-project build
 ```
 
-## Docker pull command
+### Docker pull command
 ```sh
     docker pull nasajon/box-project
 ```
