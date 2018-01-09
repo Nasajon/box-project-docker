@@ -29,11 +29,13 @@ Run the `box-project` image:
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
     nasajon/box-project build
+```
 
 ## Docker pull command
+```sh
+    docker pull nasajon/box-project
+```
 
-    docker pull nasajon/box-project
-    
 ### Local runtime/binary
 
 If you want to be able to run `box-project` as if it was installed on your host locally, you can define the following function in your `~/.bashrc`, `~/.zshrc` or similar:
