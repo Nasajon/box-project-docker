@@ -7,6 +7,8 @@ ENV BOX_PROJECT_VERSION 2.7.5
 RUN curl -L https://github.com/box-project/box2/releases/download/$BOX_PROJECT_VERSION/box-$BOX_PROJECT_VERSION.phar -o box \
     && chmod +x box \
     && mv box /usr/local/bin/box
+    
+RUN sed -i -e "s|;phar.readonly\s*=.*|phar.readonly = Off|" /etc/php7/php.ini
 
 WORKDIR /app
 
