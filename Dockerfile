@@ -10,6 +10,8 @@ RUN curl -L https://github.com/box-project/box2/releases/download/$BOX_PROJECT_V
     
 RUN sed -i -e "s|;phar.readonly\s*=.*|phar.readonly = Off|" /etc/php7/php.ini
 
+COPY php.ini /usr/local/etc/php/php.ini
+
 WORKDIR /app
 
 ENTRYPOINT ["/usr/local/bin/box"]
