@@ -8,8 +8,6 @@ RUN curl -L https://github.com/box-project/box2/releases/download/$BOX_PROJECT_V
     && chmod +x box \
     && mv box /usr/local/bin/box
     
-RUN sed -i -e "s|;phar.readonly\s*=.*|phar.readonly = Off|" /etc/php7/php.ini
-
 COPY php.ini /usr/local/etc/php/php.ini
 
 WORKDIR /app
