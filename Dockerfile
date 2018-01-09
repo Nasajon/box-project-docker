@@ -8,4 +8,6 @@ RUN curl -L https://github.com/box-project/box2/releases/download/$BOX_PROJECT_V
     && chmod +x box \
     && mv box /usr/local/bin/box
 
+WORKDIR /app
+
 ENTRYPOINT ["/usr/local/bin/box"]
